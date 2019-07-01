@@ -18,7 +18,7 @@ public class LoginJDBC {
 	ResultSet rs =statement.executeQuery("select * from Employee");
 	
 	while(rs.next()) {	
-		System.out.println(rs.getInt(ID)+"  "+rs.getString());  	
+		System.out.println(rs.getInt(1)+"  "+rs.getString(2));  	
 	}
 	con.close();
 	
